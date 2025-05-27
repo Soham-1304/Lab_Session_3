@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light">
   <header>
     <nav class="container flex">
       <div class="logo">Soham Karandikar</div>
@@ -21,7 +21,7 @@
       </ul>
     </nav>
     <section class="hero">
-      <img
+      <img class="image" id="image"
         src="soham.png"
         alt="Your Photo"
         style="
@@ -43,7 +43,11 @@
   <main class="container">
     <section id="about" class="card">
       <h2>About Me</h2>
-      <p></p>
+      <p>I’m a passionate Computer Science student at ITM Skills University, where I explore
+        web development, data structures, and machine learning. When I’m not coding,
+        you’ll find me reading tech blogs, contributing to open-source projects,
+        or experimenting with HTML/CSS. I love solving problems and
+        continually honing my skills to build elegant, user-friendly experiences.</p>
     </section>
 
     <section id="education" class="card">
@@ -97,5 +101,14 @@
   <footer class="container">
     <p>© 2025 Your Name • Designed with ❤️</p>
   </footer>
+  <script>
+    const image = document.getElementById("image");
+  
+    image.addEventListener("click", () => {
+      console.log("hello");
+      
+      document.body.classList.toggle("light");
+    });
+  </script>  
 </body>
 </html>
